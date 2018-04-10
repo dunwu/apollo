@@ -47,6 +47,10 @@ public class SimpleApolloConfigDemo {
   }
 
   public static void main(String[] args) throws IOException {
+    // set env params to change the env and server ip
+    System.setProperty("env", "DEV");
+    System.setProperty("dev_meta", "http://192.168.28.32:8080");
+
     SimpleApolloConfigDemo apolloConfigDemo = new SimpleApolloConfigDemo();
     System.out.println(
         "Apollo Config Demo. Please input key to get the value. Input quit to exit.");
